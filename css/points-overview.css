@@ -156,3 +156,37 @@
 	display: block;
 	background: url(../img/points-table-icons.png) no-repeat 50% -155px;
 }
+.box-accordion-arrow h4 {
+	width: 100%;
+	cursor: pointer;
+}
+.box-accordion-arrow h4:after {
+	width: 17px;
+	height: 10px;
+	content: "";
+	background: url(../img/arrow-down.png) no-repeat 98% 50%;
+	cursor: pointer;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s; 
+	-webkit-transition: all 0.3s; 
+	-o-transition: all 0.3s; 
+	position: absolute;
+	left: 95%;
+	top: 10px;
+	cursor: pointer;
+}
+	.box-accordion-arrow .content {
+		height: 0;
+		display: none;
+	}
+	.box-accordion-arrow.active .content {
+		height: auto;
+		display: block;
+	}
+	.box-accordion-arrow.active h4:after {
+	 	-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
