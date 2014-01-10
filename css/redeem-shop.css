@@ -51,6 +51,11 @@
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 	position: relative;
 }
+
+.tabs li a.active {
+    color: #5f9f00;
+}
+
 .tabs .inner-tab img {
 	width: 100%;
 	max-width: 100%;

@@ -333,6 +333,11 @@
 		line-height: 21px;
 	}
 
+.devider{
+    height: 5px;
+    border-bottom: 1px dashed #0c663e;
+    margin-bottom: 5px;
+}
 .search-big {
 	width: 100%;
 	float: left;
@@ -442,17 +447,20 @@
 .my-account .f-pass {
 	font-size: 1em;
 	color: #72ba00;
+	cursor: pointer;
 }
 .my-account p {
 }
 .shopping-price {
 	background: #dfdfd0;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 .shopping-price h2 {
 	color: #0c663e;
     font-family: 'VAGRoundedStdLight';
+    text-align: center;
 }
 .shopping-list li a {
 	background: none;
@@ -729,21 +737,24 @@
 	.suggest:first-child .suggest-row {
 		border-top: 1px dashed #bdbdac;
 	}
-	.suggest-row > span {
+	.suggest-row > * {
 		width: 100%;
 		float: left;
 		border: 0px;
 		color: #bdbdac;
 	}
-	.suggest-row span > span{
+	.suggest-row * > *{
 		color: #056b3e;
 	}
 	
-	.suggest:hover {
+	.suggest:hover,
+	.suggest.active {
 		background-color: #056b3e;
 	}
-		.suggest:hover .suggest-row > span,
-		.suggest:hover .suggest-row > span > span {
+		.suggest:hover .suggest-row > *,
+		.suggest:hover .suggest-row > * > *,
+		.suggest.active .suggest-row > *,
+		.suggest.active .suggest-row > * > * {
 			color: #fff;
 		}
 		.suggest:last-child {
