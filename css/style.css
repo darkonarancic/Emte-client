@@ -1,0 +1,93 @@
+body {
+	background-color: #F5F4F1;
+	color: #666;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	width: 960px;
+	padding-top: 80px;
+}
+
+.main-logo {
+	text-align: center;
+}
+
+.action-buttons {
+	padding-top: 60px;
+}
+
+.register-step-title {
+	color: #76b800;	
+}
+
+#registerFormStep1 {
+	
+}
+
+#registerFormStep1 label,
+#registerFormStep2 label {
+	color: #196b3a;
+}
+
+#registerFormStep1 div.form-group:last-child {
+	padding-top: 20px;
+}
+
+.already-have-profile {
+	padding-top: 20px;
+}
+
+#step2 div.general-error {
+	padding-top: 20px;
+}
+
+#registerFormStep2 div.form-actions {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.help-inline {
+	color: #FF0000;
+}
+
+#mailVerificationWell {
+	padding-top: 40px;
+}
+
+#smsVerificationWell {
+	padding-top: 40px;
+}
+
+
+.verification-well {
+	background-color: #FFF;
+}
+
+.verification-well i.glyphicon {
+	padding: 15px 30px;
+	font-size: 72px;
+}
+
+
+.profile-details {
+	padding: 20px 20px;	
+}
+
+ul.unstyled {
+	background-color: #FFF;
+	list-style: none outside none;
+}
+
+ul.unstyled li {
+    border-top: 1px solid #F5F5F5;
+    font-size: 13px;
+    padding: 8px 0;
+}
+
+
+ul.unstyled li span {
+    color: #666666;
+    font-size: 13px;
+    margin-right: 7px;
+}

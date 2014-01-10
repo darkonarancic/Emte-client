@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'VAGRoundedStdBlack';
+    src: url('EMTEStdBlack/emtestdblack.eot');
+    src: url('EMTEStdBlack/emtestdblack.eot') format('embedded-opentype'),
+         url('EMTEStdBlack/emtestdblack.woff') format('woff'),
+         url('EMTEStdBlack/emtestdblack.ttf') format('truetype'),
+         url('EMTEStdBlack/emtestdblack.svg#VAGRoundedStdBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'VAGRoundedStdregular';
+    src: url('EMTEStdBold/emtestdbold.eot');
+    src: url('EMTEStdBold/emtestdbold.eot') format('embedded-opentype'),
+         url('EMTEStdBold/emtestdbold.woff') format('woff'),
+         url('EMTEStdBold/emtestdbold.ttf') format('truetype'),
+         url('EMTEStdBold/emtestdbold.svg#VAGRoundedStdregular') format('svg');
+}
+
+@font-face {
+    font-family: 'VAGRoundedStdLight';
+    src: url('EMTEStdLight/emtestdlight.eot');
+    src: url('EMTEStdLight/emtestdlight.eot') format('embedded-opentype'),
+         url('EMTEStdLight/emtestdlight.woff') format('woff'),
+         url('EMTEStdLight/emtestdlight.ttf') format('truetype'),
+         url('EMTEStdLight/emtestdlight.svg#VAGRoundedStdLight') format('svg');
+}
+
+@font-face {
+    font-family: 'VAGRoundedStdThin';
+    src: url('EMTEStdThin/emtestdthin.eot');
+    src: url('EMTEStdThin/emtestdthin.eot') format('embedded-opentype'),
+         url('EMTEStdThin/emtestdthin.woff') format('woff'),
+         url('EMTEStdThin/emtestdthin.ttf') format('truetype'),
+         url('EMTEStdThin/emtestdthin.svg#VAGRoundedStdThin') format('svg');
+}
+
+@font-face {
+    font-family: 'SketchRockwellRegular';
+    src: url('SketchRockwell/sketchrockwell.eot');
+    src: url('SketchRockwell/sketchrockwell.eot') format('embedded-opentype'),
+         url('SketchRockwell/sketchrockwell.woff') format('woff'),
+         url('SketchRockwell/sketchrockwell.ttf') format('truetype'),
+         url('SketchRockwell/sketchrockwell.svg#SketchRockwellRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'VAGRoundedStdBold';
+    src: url('VAGRoundedStd-Bold/vagroundedstd-bold.eot');
+    src: url('VAGRoundedStd-Bold/vagroundedstd-bold.eot') format('embedded-opentype'),
+         url('VAGRoundedStd-Bold/vagroundedstd-bold.woff') format('woff'),
+         url('VAGRoundedStd-Bold/vagroundedstd-bold.ttf') format('truetype'),
+         url('VAGRoundedStd-Bold/vagroundedstd-bold.svg#VAGRoundedStdBold') format('svg');
+}
+
+

@@ -1,0 +1,277 @@
+
+.grid_4.col.lbl, .grid_4.col.lbl + span > input {
+	margin-bottom: 20px;
+}
+.grid_4.col.lbl + span > input,
+.grid_4.col.lbl + span > textarea {
+	width: 100%;
+}
+
+h2 {
+	margin-top: 20px;
+}
+.radio label{
+	/* float: left; */
+	height: 40px;
+	color: #666;
+	font-size: 1em;
+	font-family: 'VAGRoundedStdThin';
+	line-height: 40px;
+	vertical-align: middle;
+	display: inline-block;
+}
+	.radio > label + label {
+		margin-left: 50px;
+	}
+	.radio label > .iradio_flat-green {
+		margin-right: 5px;
+	}
+label.agree {
+	width: 100%;
+	float: left;
+	color: #666;
+	font-family: 'VAGRoundedStdThin';
+	vertical-align: top;
+	font-size: 1em;
+	margin: 20px 0 30px 0;
+}
+label.agree .icheckbox_flat-green {
+	margin-right: 5px;
+}
+	label.agree a {
+		text-decoration: underline;
+		vertical-align: top;
+		font-size: inherit;
+	}
+	label .file_size {
+		color: #373737;
+	}
+	label.agree a.pdf {
+		width: 18px;
+		height: 19px;
+		display: inline-block;
+		background: url(../img/pdf_ico.png) no-repeat 100% 50%;
+	}
+.registration .grid_4.col {
+	position: relative;
+}
+
+.sligro_card {
+	border: 2px solid #74bd03;
+	background: #fff;
+	padding: 23px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	left: 640px;
+	top: -73px;
+}
+	.sligro_card p {
+		color: #666;
+		font-family: 'VAGRoundedStdLight';
+		font-size: 0.9em;
+	}
+
+	.sligro_card:after {
+		content: ' ';
+		position: absolute;
+		top: 17px;
+		left: -17px;
+		margin-left: -8px;
+		width: 0; height: 0;
+		border-top: 13px solid transparent;
+		border-bottom: 13px solid transparent;
+		border-left: 13px solid transparent;
+		border-right: 13px solid #fff;
+	}
+	.sligro_card:before {
+		content: ' ';
+		position: absolute;
+		top: 15px;
+		left: -22px;
+		margin-left: -8px;
+		width: 0; height: 0;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 15px solid transparent;
+		border-right: 15px solid #83c320;
+	}
+	
+	.sligro_card span {
+		font-size: 0.8em;
+		color: #16732d;
+		font-family: 'VAGRoundedStdLight';
+		display: block;
+		position: relative;
+		top: 105px;
+	}
+	.sligro_card img {
+		float: right;
+	}
+label.error {
+	min-width: 279px;
+	max-width: 279px;
+	float: left;
+	border: 2px solid #f3babb;
+	background: #fff;
+	padding: 10px 8px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	left: 108%;
+	top: -3px;
+	position: absolute;
+	
+	color: #b05559;
+    font-family: 'VAGRoundedStdLight';
+    font-size: 1em;
+}
+	label.error:after {
+		content: ' ';
+		position: absolute;
+		top: 11px;
+		left: -8px;
+		margin-left: -8px;
+		width: 0; height: 0;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 8px solid transparent;
+		border-right: 8px solid #fff;
+	}
+	label.error:before {
+		content: ' ';
+		position: absolute;
+		top: 9px;
+		left: -21px;
+		margin-left: 0;
+		width: 0; height: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid transparent;
+		border-right: 10px solid #f3babb;
+	}
+
+.registration-inline label.error h4 {
+	color: #b05559;
+    font-family: 'VAGRoundedStdBold';
+    font-size: 1em;
+}
+
+.registration-inline .error_summary {
+	display: none;
+	color: #b05559;
+    font-family: 'VAGRoundedStdLight';
+    font-size: 1em;
+	padding: 15px;
+	border: 2px solid #f3babb;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	background: #f7d1d3;
+}
+	.error_summary h4 {
+		color: #b05559;
+	}
+	
+.registration_success p {
+	font-size: 1.1em;
+	color: #16732d;
+	font-family: 'VAGRoundedStdLight';
+	display: block;
+}
+
+.registration-inline .error-crrect.relative {
+	float: none;
+}
+.error-crrect label.error {
+	top: 16px;
+}
+.registration-form {
+	z-index: 1;
+}
+.postcode + label.error, .houseNumber + label.error {
+	visibility: hidden;
+}
+.registration-inline input[type=email] + label.error {
+	top: 53px;
+	left: 123%;
+}
+.text label.error {
+	font-size: 0.9em;
+	left: 108%;
+}
+.msg + label.error {
+	top: 53px;
+	left: 123%;
+}
+.birthdate + label.error {
+	left: 174%;
+}
+.row-margin-big {
+	margin-top: 50px;
+}
+.hidden-box {
+	display: none;
+}
+#forgot-password-form {
+	display: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.btn-group-justified a label.error {
+		left: 225%;
+	}
+	.text label.error {
+		left: 114%;
+	}
+	.msg + label.error {
+		left: 123%;
+	}
+}
+
+@media screen and (max-width:751px) {
+	label.error {
+		display: none !important;
+	}
+}
+@media screen and (max-width:991px) {
+	.registration label.error {
+		display: none;
+	}
+	.postcode + label.error, .houseNumber + label.error {
+		visibility: visible;
+		top: auto;
+		bottom: -1px;
+	}
+	.birthdate + label.error {
+		left: 124%;
+	}
+	@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		.msg + label.error {
+			left: 108%;
+		}
+	}
+}
+@media screen and (max-width:974px) {
+	@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		.text label.error {
+			left: 111.5%;
+		}
+	}
+	.msg + label.error {
+		left: 108%;
+	}
+}

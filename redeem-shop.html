@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EMTE</title>
+		<meta charset="UTF-8">
+		<!-- css styles -->
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/global.css"/>
+		<link rel="stylesheet" href="font/font.css"/>
+		<link rel="stylesheet" href="css/bjqs.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/main-menu.css"/>
+		<link rel="stylesheet" href="css/redeem-shop.css" />
+
+		<!-- javascript -->
+		<script type="text/javascript" src="js/jquery-v1.8.3.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.16305.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/main-menu.js"></script>
+
+	</head>
+	<body>
+		<header class="menu">
+			<div class="container">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-pull-1 logo">
+					<a href="" class=""><img src="img/logo.png" alt="EMTE logo" /></a>
+				</div>
+				<nav id="main-menu-nav">
+					<div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 col-lg-push-1 col-md-push-1 col-sm-push-2 col-xs-push-0">
+						<div class="row">
+							<div class="pull-right col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="row">
+									<a href="" class="search col-sm-2 col-xs-2 pull-right" data-val="search" data-active-val="3"><span>Zoek</span></a>
+									<a href="" class="shopping-list col-md-4 col-sm-5 col-xs-2 pull-right" data-val="shopping-list" data-active-val="2"><span>Boodschappenlijstje</span><sup class="notification">1</sup></a>
+									<a href="#" class="my-emte col-sm-3 col-xs-2 pull-right" data-val="my-account" data-active-val="1"><span>Mijn EMT&Eacute;</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+					class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-lg-pull-10 col-md-pull-9 col-sm-pull-8 col-sm-pull-0 text-center">
+						<a href="" class="menu-link pull-lef" data-val="menu-items" data-active-val="4"> <span>Menu</span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div id="menu-container" class="menu-container">
+			<div class="relative">
+				<a href="" class="close"></a>
+				<div class="container">
+
+					<div class="my-account">
+						<!--/* When user is logged in */-->
+						<!-- <div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+						<h3>Welkom <span>mevr.</span>&nbsp;<span>Ingrid van Dijk - Janssen</span></h3>
+						<ul>
+						<li>
+						<a href=""> Berichten <label class="notification">1</label></a>
+						</li>
+						<li>
+						<a href=""> Bestellingen </a>
+						</li>
+						<li>
+						<a href=""> Instellingen </a>
+						</li>
+						<li>
+						<a href=""> Logout </a>
+						</li>
+						</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+						<div class="row">
+						<span class="lbl">Uw saldo</span>
+						</div>
+						<div class="row">
+						<div
+						class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shopping-price">
+						<h2>1250 punten</h2>
+						<br />
+						<p class="text-center">
+						Naar de catalogus
+						</p>
+						</div>
+						</div>
+						</div>
+						</div> -->
+						<!--/* If user is NOT logged in */-->
+						<div>
+							<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+								<h3>Word Fijnproever!</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+									aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+								<div class="h-sep"></div>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right">
+										<a href="#" class="btn green-big">Registreren</a>
+									</div>
+								</div>
+							</div>
+							<br class="visible-xs" />
+							<br class="visible-xs" />
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1" id="login-form">
+								<h3>Word Fijnproever!</h3>
+								<form id="frmLogin" class="form-horizontal login-form" role="form" method="post">
+									<input type="hidden" name="successUrl" />
+									<div class="row">
+										<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"
+										for="j_username" > Loginnaam </span>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+											<input type="email" class="txt-medium" id="j_username"
+											name="j_username" placeholder="emailadres of kaartnummer" />
+										</div>
+									</div>
+									<div class="h-sep"></div>
+									<div class="row">
+										<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"
+										for="j_password"> Wachtwoord </span>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+											<input class="txt-medium" type="password" id="j_password"
+											name="j_password" placeholder="Wachtwoord" />
+										</div>
+									</div>
+									<div class="h-sep"></div>
+									<div class="error_summary">
+										<label> Bad credentials. </label>
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-4 pull-left">
+											<input type="submit" class="btn green-big" value="Inloggen"
+											id="btnLogin" />
+											<div class="visible-xs h-sep"></div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
+											<a href="" class="f-pass forgot">Wachtwoord vergeten?</a>
+										</div>
+
+									</div>
+									<br />
+								</form>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1" id="forgot-password-form">
+								<h3>Nieuw wachtwoord</h3>
+								<form id="frmForgotPass" role="form">
+									<div class="row">
+										<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"> E-mailadres </span>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+											<input type="email" class="txt-medium" name="txt-forgot" id="txt-forgot" placeholder="Emailadres" title="Forgot password email not correct format." />
+										</div>
+									</div>
+									<div class="h-sep"></div>
+									<div class="error_summary">
+										<label> Bad credentials. </label>
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-4 pull-left">
+											<input type="submit" id="btnSubmitForgotPassword" class="btn green-big" value="Versturen" />
+										</div>
+										<div class="visible-xs h-sep"></div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
+											<a href="" class="f-pass lbl login">Inloggen</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="shopping-list">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+									<div class="row">
+										<input type="text" placeholder="Zoek producten" class="txt-medium" />
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="row">
+										<input type="button" class="btn green-big btn-input" value="Voeg toe aan uw lijst" />
+									</div>
+								</div>
+							</div>
+							<br />
+							<br />
+							<div class="row">
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+									<div class="row">
+										<h3>Uw boodschappenlijst</h3>
+									</div>
+									<div class="row">
+										<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+											<div class="row">
+												<ul>
+													<li>
+														<a href=""> Bananen </a>
+													</li>
+													<li>
+														<a href=""> 2x Calvé Pindakaas </a>
+													</li>
+													<li>
+														<a href=""> Verse kipfilet </a>
+													</li>
+													<li>
+														<a href=""> Bavaria bier </a>
+													</li>
+													<li>
+														<a href=""> Uien </a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+											<div class="row">
+												<ul>
+													<li>
+														<a href=""> Oude Kaas </a>
+													</li>
+													<li>
+														<a href=""> Oude Kaas </a>
+													</li>
+													<li>
+														<a href=""> Hagelslag </a>
+													</li>
+													<li>
+														<a href=""> Witte bolletjes </a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-push-3 col-md-push-3 col-sm-push-3">
+								<div class="row">
+									<input type="button" class="btn green-big" value="Bewaar deze lijst" />
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-push-3 col-md-push-3 col-sm-push-3">
+								<input type="button" class="btn green-big" value="Deel deze lijst" />
+							</div>
+						</div>
+					</div>
+					<div class="search">
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+							<div class="search-big">
+								<div class="row">
+									<div class="txt-big col-xs-12">
+										<div class="row">
+											<input type="text" class=" col-xs-11" placeholder="Zoek" />
+										</div>
+										<a href="#" class="btn-search col-xs-1 pull-right"></a>
+									</div>
+								</div>
+								<div class="search-box">
+									<div class="row">
+										<div class="suggestions">
+											<div class="suggest col-xs-12">
+												<div class="suggest-row">
+													<span class="">Appel<span>s</span></span>
+												</div>
+											</div>
+											<div class="suggest col-xs-12">
+												<div class="suggest-row">
+													<span class="">Appel<span>flappen</span></span>
+												</div>
+											</div>
+											<div class="suggest col-xs-12">
+												<div class="suggest-row">
+													<span class="">Appel<span>moes</span></span>
+												</div>
+											</div>
+											<div class="suggest col-xs-12">
+												<div class="suggest-row">
+													<span class="">Appel<span>sap</span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row h-sep">
+										<div class="col-xs-12 h-sep hidden-xs">
+											<h4><strong>10</strong> producten met ’<strong>Appel</strong>’ gevonden</h4>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search gray"> <img src="img/demo/s1.png" /> <span class="fav"></span> </a>
+											<span> Appelsientje appel troebel mild </span>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search gray"> <img src="img/demo/s2.png" /> <span class="fav"></span> </a>
+											<span> Bio+ appelmoes </span>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search gray"> <img src="img/demo/s3.png" /> </a>
+											<span> Bio+ appelsap </span>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search gray"> <img src="img/demo/s4.png" /> </a>
+											<span> Elstar </span>
+										</div>
+										<div class="h-sep hidden-xs"></div>
+										<div class="row-full h-sep">
+											<div class="col-xs-12 text-center">
+												<a href="#" class="btn orange col-lg-4 col-md-4 col-sm-4 col-xs-12"> Bekijk alle 10 producten </a>
+											</div>
+										</div>
+									</div>
+									<div class="line-sep hidden-xs"></div>
+									<div class="row h-sep">
+										<div class="col-xs-12 h-sep hidden-xs">
+											<h4><strong>7</strong> producten met ’<strong>Appel</strong>’ gevonden</h4>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#"  class="item-search"> <img src="img/demo/s5.png" /> </a>
+											<span> Oma’s appeltaart </span>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search"> <img src="img/demo/s6.png" /> </a>
+											<span> Provencaalse eend met gebakken appels </span>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search"> <img src="img/demo/s7.png" /> </a>
+											<span> Rode kool met appeltjes </span>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+											<a href="#" class="item-search"> <img src="img/demo/s8.png" /> </a>
+											<span> Appelchutney </span>
+										</div>
+										<div class="h-sep hidden-xs"></div>
+										<div class="row-full h-sep">
+											<div class="col-xs-12 text-center">
+												<a href="#" class="btn orange col-lg-4 col-md-4 col-sm-4 col-xs-12"> Bekijk alle 7 recepten </a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<div class="clearfix"></div>
+		<!-- main content -->
+		<section class="container">
+			<div class="col-lg-11 col-md-11 col-sm-10 col-xs-12 col-lg-push-0 col-md-push-1 col-sm-push-1 breadcrumb pull-right">
+				<a href="">fijnproeversshop</a>
+				<a href="" class="">restaurants</a>
+				<a href="" class="active">Japans Sushi en Grill Restaurant Suki Yaki</a>
+			</div>
+			<div class="h-sep visible-sm visible-xs"></div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-pull-1">
+				<img src="img/fijnproevershop-logo.png" alt=" " class="logo-second" />
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+				<div class="h-sep visible-xs"></div>
+				<div class=" col-xs-10 visible-xs">
+					<div class="row" id="tabs-switcher">
+						<div class="styled-select">
+							<select >
+								<option>Avondje uit</option>
+								<option>Dagje weg</option>
+								<option>Restaurants</option>
+								<option>Hotels</option>
+								<option>Koken &amp; tafelen</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-2 visible-xs">
+					<a href="#" class="btn light-green cart-white"> <span class="notification">1</span> </a>
+				</div>
+				<div class="h-sep visible-xs"></div>
+				<div class="tabs row-full" id="tabs">
+					<ul class="hidden-xs">
+						<li>
+							<a href="#tab-1">Avondje uit</a>
+						</li>
+						<li>
+							<a href="#tab-2">Dagje weg</a>
+						</li>
+						<li>
+							<a href="#tab-3">Restaurants</a>
+						</li>
+						<li>
+							<a href="#tab-4">Hotels</a>
+						</li>
+						<li>
+							<a href="#tab-5">Koken &amp; tafelen</a>
+						</li>
+					</ul>
+					<div id="tab-1"></div>
+					<div id="tab-2"></div>
+					<div id="tab-3">
+						<div class="banner-slider" id="slideshow">
+							<ul class="bjqs">
+								<li>
+									<img src="img/demo/slider-1.png" alt="" />
+								</li>
+								<li>
+									<img src="img/demo/slider-1.png" alt="" />
+								</li>
+								<li>
+									<img src="img/demo/slider-1.png" alt="" />
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div id="tab-4"></div>
+					<div id="tab-5"></div>
+				</div>
+				<div class="h-sep-big">
+					<h3 class="thin">Japans Sushi en Grill Restaurant Suki Yaki</h3>
+				</div>
+				</article>
+				<div class="row-full">
+					<h3 class="dark-gray">All-you-can-eat voor 2 personen voor € 20,00</h3>
+				</div>
+				<p class="normal row-full">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget pharetra dui.
+					In hac habitasse platea dictumst. Maecenas tincidunt pretium mauris id elementum.
+					Nam adipiscing fringilla odio, eu eleifend ligula vehicula non.
+				</p>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<h3 class="thin">Highlights</h3>
+					<ul class="normal">
+						<li>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						</li>
+						<li>
+							Mauris ullamcorper purus a lacus ultrices semper
+						</li>
+						<li>
+							Cras vitae consequat lorem, in tristique massa donec tristique
+						</li>
+						<li>
+							Telis erat ac pellentesque augue aliquet nec mauris quis nisi at neque
+						</li>
+						<li>
+							Sollicitudin fermentum id nec velit. Praesent eu malesuada leo fermentum id nec velit
+						</li>
+					</ul>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<h3 class="thin">De voorwaarden</h3>
+					<ul class="normal">
+						<li>
+							De coupon kan gebruikt worden in de periode van 1 januari 2014 t/m 12 februari 2014
+						</li>
+						<li>
+							U kunt maximaal 1 coupon per boeking inleveren
+						</li>
+						<li>
+							Deze coupon is alleen in te wisselen in onze vestiging in Zaltbommel
+						</li>
+						<li>
+							Overige voorwaarden door de partner ingevuld]
+						</li>
+					</ul>
+				</div>
+				<div class="h-sep"></div>
+				<div class="col-xs-12 pull-left">
+					<div class="row">
+						<h3 class="thin">Foto’s</h3>
+						<div class="row photo-row">
+							<span class="col-lg-3 col-md-4 col-sm-4 col-xs-6"> <img src="img/demo/r2.png" alt="" /> </span>
+							<span class="col-lg-3 col-md-4 col-sm-4 col-xs-6"> <img src="img/demo/r3.png" alt="" /> </span>
+							<span class="col-lg-3 col-md-4 col-sm-4 col-xs-6"> <img src="img/demo/r4.png" alt="" /> </span>
+							<span class="col-lg-3 col-md-4 col-sm-4 col-xs-6"> <img src="img/demo/r4.png" alt="" /> </span>
+						</div>
+					</div>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<h3 class="thin">Omschrijving aanbieding</h3>
+					<p class="normal row-full">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+						nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+						Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+						In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+						Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+						Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+					</p>
+					<div class="h-sep"></div>
+					<a href="#" class="btn green-arrow">Kijk voor meer informatie op </a>
+				</div>
+				<div class="line-sep"></div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<h3 class="thin">Meer over Japans Sushi en Grill Restaurant Suki Yaki</h3>
+					<p class="normal row-full">
+						Ons restaurant biedt u het oosterse dineren in een exclusieve en ontspannen ambiance, waar al onze overheerlijke Japanse gerechten een  ware tongstreling zijn voor de fijnproevers.
+						<br/>
+						Bij ons kunt u  uitgebreid  dineren  in  kleine  of grote groepen. Geniet van de lekkerste authentieke Japanse gerechten.  Omdat u bij ons diverse eetrondes heeft, kunt u vele gerechten uitproberen.
+						<br/>
+						<br/>
+						Het restaurant bevindt zich in hartje Veghel tegenover het bus station. Ook is er een ruime parkeer gelegenheid op loopafstand van het restaurant.
+					</p>
+					<div class="h-sep"></div>
+					<a href="#" class="btn green-arrow">Onze website</a>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-close">
+					<a href="#">Minder informatie</a>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<h3 class="thin">Ook leuk....</h3>
+					<div class="row also-nice">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="box normal">
+								<img src="img/demo/r5.png" alt="" />
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+									<span>Evenementen</span>
+									<p class="normal">
+										2 gratis kaarten voor het wintercircus
+									</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="box normal">
+								<img src="img/demo/r6.png" alt="" />
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+									<span>Restaurant Hertog Jan</span>
+									<p class="normal">
+										50% procent korting op ons proefmenu
+									</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="box normal">
+								<img src="img/demo/r7.png" alt="" />
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+									<span>Japans grillrestaurant Suki Yaki</span>
+									<p class="normal">
+										All-you-can-eat 2e persoon gratis
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+				<div class="box normal">
+					<div class="col-xs-12 h-sep">
+						<div>
+							<h5 class="title">Japans Sushi en Grill Restaurant Suki Yaki</h5>
+							<h3 class="dark-gray"> All-you-can-eat voor 2
+							<br/>
+							personen voor € 20,00 </h3>
+							<div class="line-sep h-sep"></div>
+							<div class="row-full text-center">
+								<div class="h-sep-big">
+									<span class="numb-of-point">500</span>
+								</div>
+							</div>
+							<span class="row-full price">Normale prijs €45,00</span>
+							<span class="row-full price">Korting twv €15 voor 500 punten</span>
+
+							<div class="text-center h-sep">
+								<a href="#" class="row-full btn light-green">Bestel deze coupon</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="h-sep"></div>
+				<div class="box bg small">
+					<h4 class="title"> Uw puntenaantal </h4>
+					<div class="numb text-center">
+						<span class="">0</span>
+						<span class="active">1</span>
+						<span class="active">2</span>
+						<span class="active">5</span>
+						<span class="active">0</span>
+					</div>
+					<div class="line-sep h-sep"></div>
+					<div class="row-full text-center">
+						<a href="#" class="btn green-arrow">Naar uw puntenoverzicht</a>
+					</div>
+				</div>
+				<div class="box normal small">
+					<div class="col-xs-12 h-sep">
+						<h4 class="title pos-rel"> Uw puntenaantal <sup class="notification pull-right">1</sup></h4>
+						<div class="discount row-full">
+							Er zit 1 item in je winkelmandje
+						</div>
+						<div class="line-sep h-sep"></div>
+						<div class="row-full text-center">
+							<a href="#" class="btn cart">Naar uw puntenoverzicht</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- main content -->
+
+		<footer>
+			<div class="page"></div>
+		</footer>
+
+		<script type="text/javascript" src="js/redeem-shop.js"></script>
+	</body>
+</html>

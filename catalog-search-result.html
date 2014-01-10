@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EMTE</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+		<!-- css styles -->
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/global.css"/>
+		<link rel="stylesheet" href="font/font.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/main-menu.css"/>
+		<link rel="stylesheet" href="js/perfect-scrollbar/perfect-scrollbar.css"/>
+		<link rel="stylesheet" href="css/green-checkbox.css"/>
+		
+		<!-- javascript -->
+		<script type="text/javascript" src="js/jquery-v1.8.3.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/iCheck.js"></script>
+		<script src="js/perfect-scrollbar/jquery.mousewheel.js"></script>
+		<script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.16305.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/main-menu.js"></script>
+		<script type="text/javascript" src="js/search-result.js"></script>
+	</head>
+	<body>
+		<header class="menu">
+			<div class="container">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-pull-1 logo">
+					<a href="" class=""><img src="img/logo.png" alt="EMTE logo" /></a>
+				</div>
+				<nav id="main-menu-nav">
+					<div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 col-lg-push-1 col-md-push-1 col-sm-push-2 col-xs-push-0">
+						<div class="row">
+							<div class="pull-right col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="row">
+									<a href="" class="search col-sm-2 col-xs-2 pull-right" data-val="search" data-active-val="3"><span>Zoek</span></a>
+									<a href="" class="shopping-list col-md-4 col-sm-5 col-xs-2 pull-right" data-val="shopping-list" data-active-val="2"><span>Boodschappenlijstje</span><sup class="notification">1</sup></a>
+									<a href="#" class="my-emte col-sm-3 col-xs-2 pull-right" data-val="my-account" data-active-val="1"><span>Mijn EMT&Eacute;</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+					class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-lg-pull-10 col-md-pull-9 col-sm-pull-8 col-sm-pull-0 text-center">
+						<a href="" class="menu-link pull-lef" data-val="menu-items" data-active-val="4"> <span>Menu</span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div id="menu-container" class="menu-container">
+			<div class="relative">
+				<a href="" class="close"></a>
+				<div class="container">
+					<div class="my-account">
+						<div>
+							<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+								<h3>Word Fijnproever!</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+									aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+								<div class="h-sep"></div>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right">
+										<a href="#" class="btn green-big">Registreren</a>
+									</div>
+								</div>
+							</div>
+							<br class="visible-xs" />
+							<br class="visible-xs" />
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1" id="login-form">
+								<h3>Word Fijnproever!</h3>
+								<form id="frmLogin" class="form-horizontal login-form" role="form" method="post">
+									<input type="hidden" name="successUrl" />
+									<div class="row">
+										<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"> Loginnaam </span>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+											<input type="email" class="txt-medium" id="j_username"
+											name="j_username" placeholder="emailadres of kaartnummer" />
+										</div>
+									</div>
+									<div class="h-sep"></div>
+									<div class="row">
+										<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"> Wachtwoord </span>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+											<input class="txt-medium" type="password" id="j_password"
+											name="j_password" placeholder="Wachtwoord" />
+										</div>
+									</div>
+									<div class="h-sep"></div>
+									<div class="error_summary">
+										<label> Bad credentials. </label>
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-4 pull-left">
+											<input type="submit" class="btn green-big" value="Inloggen"
+											id="btnLogin" />
+											<div class="visible-xs h-sep"></div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
+											<a href="" class="f-pass forgot">Wachtwoord vergeten?</a>
+										</div>
+
+									</div>
+									<br />
+								</form>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1" id="forgot-password-form">
+								<h3>Nieuw wachtwoord</h3>
+								<form id="frmForgotPass" role="form">
+									<div class="row">
+										<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"> E-mailadres </span>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+											<input type="email" class="txt-medium" name="txt-forgot" id="txt-forgot" placeholder="Emailadres" title="Forgot password email not correct format." />
+										</div>
+									</div>
+									<div class="h-sep"></div>
+									<div class="error_summary">
+										<label> Bad credentials. </label>
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-4 pull-left">
+											<input type="submit" id="btnSubmitForgotPassword" class="btn green-big" value="Versturen" />
+										</div>
+										<div class="visible-xs h-sep"></div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
+											<a href="" class="f-pass lbl login">Inloggen</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="shopping-list">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+									<div class="row">
+										<input type="text" placeholder="Zoek producten" class="txt-medium" />
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="row">
+										<input type="button" class="btn green-big btn-input" value="Voeg toe aan uw lijst" />
+									</div>
+								</div>
+							</div>
+							<br />
+							<br />
+							<div class="row">
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+									<div class="row">
+										<h3>Uw boodschappenlijst</h3>
+									</div>
+									<div class="row">
+										<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+											<div class="row">
+												<ul>
+													<li>
+														<a href=""> Bananen </a>
+													</li>
+													<li>
+														<a href=""> 2x Calvé Pindakaas </a>
+													</li>
+													<li>
+														<a href=""> Verse kipfilet </a>
+													</li>
+													<li>
+														<a href=""> Bavaria bier </a>
+													</li>
+													<li>
+														<a href=""> Uien </a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+											<div class="row">
+												<ul>
+													<li>
+														<a href=""> Oude Kaas </a>
+													</li>
+													<li>
+														<a href=""> Oude Kaas </a>
+													</li>
+													<li>
+														<a href=""> Hagelslag </a>
+													</li>
+													<li>
+														<a href=""> Witte bolletjes </a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-push-3 col-md-push-3 col-sm-push-3">
+								<div class="row">
+									<input type="button" class="btn green-big" value="Bewaar deze lijst" />
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-push-3 col-md-push-3 col-sm-push-3">
+								<input type="button" class="btn green-big" value="Deel deze lijst" />
+							</div>
+						</div>
+					</div>
+					<div class="search">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
+							<div class="search-big">
+								<div class="row">
+									<div class="txt-big col-xs-12">
+										<div class="row">
+											<input type="text" class=" col-xs-11" placeholder="Zoek">
+										</div>
+										<a href="#" class="btn-search col-xs-1 pull-right"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-items">
+						<nav class="col-lg-21 col-md-12 col-sm-12 col-xs-10 col-lg-push-1 col-md-push-1 col-sm-push-1 col-xs-push-1">
+							<div class="row">
+								<ul class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+									<li>
+										<a href="" class="active">Home</a>
+									</li>
+									<li>
+										<a href="" class="">Aanbiedingen &amp; acties</a>
+									</li>
+									<li>
+										<a href="" class="">Assortiment</a>
+									</li>
+								</ul>
+								<ul class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+									<li>
+										<a href="" class="">Recepten, inspiratie en tips</a>
+									</li>
+									<li>
+										<a href="" class="">Fijnproevers</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<div class="clearfix"></div>
+		<!-- main content -->
+		<section class="container">
+			<div class="col-lg-11 col-md-11 col-sm-10 col-xs-12 col-lg-push-0 col-md-push-1 col-sm-push-1 breadcrumb pull-right">
+				<a href="">Ons assortiment</a>
+				<a href="" class="active">Al onze producten</a>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2 class="thin">Al onze producten</h2>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row-box">
+					<span class="col-lg-3 col-md-3 col-sm-4 col-xs-12">U heeft gezocht op: </span>
+					<input type="text" class="col-lg-8 col-md-8 col-sm-7 col-xs-8 input-left" placeholder="" />
+					<a href="#" class="btn-search-right col-lg-1 col-md-1 col-sm-1 col-xs-4 btn"></a>
+				</div>
+				<div class="h-sep"></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row-box">
+					<span class="accordion-arrow">Filter op merk, kenmerk en schap</span>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 box-normal">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="h-sep"></div>
+						<div class="row-full">
+							<h4>Filter op merk</h4>
+						</div>
+						<div class="h-sep"></div>
+						<div class="box-list">
+
+							<ul>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Amster</span> 
+									</div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Bavaria</span> </div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Brand</span> </div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Heineken</span> </div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Amster</span> </div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Bavaria</span> </div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Brand</span> </div>
+								</li>
+								<li>
+									<div>
+										<input type="checkbox" name="group1[]" />
+										<span>Heineken</span> </div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="h-sep"></div>
+						<div class="row-full">
+							<h4>Filter op schap</h4>
+						</div>
+						<div class="h-sep"></div>
+						<div class="box-list">
+							<ul>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>Adbij beir</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>Alcoholvrij bier</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>Amber bier</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>bindmiddel</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>blond bier</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>Adbij beir</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>Alcoholvrij bier</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>Amber bier</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>bindmiddel</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group2[]" />
+										<span>blond bier</span> </label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="h-sep"></div>
+						<div class="row-full">
+							<h4>Filter op kenmerk</h4>
+						</div>
+						<div class="h-sep"></div>
+						<div class="box-list">
+							<ul>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" />
+										<span>Aanbieding</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" />
+										<span>Biologisch</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" disabled="dissabled"/>
+										<span>De tien van EMTE</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" disabled="dissabled"/>
+										<span>Chez Vous assortiment</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" />
+										<span>Aanbieding</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" />
+										<span>Biolog isch</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" />
+										<span>De tien van EMTE</span> </label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" name="group3[]" />
+										<span>Chez Vous assortiment</span> </label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<a href="#" class="btn btn-white-green remove">Heineken</a>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<h3 class="normal-title">Gevonden in 2 Categorieën</h3>
+				</div>
+				<div class="h-sep"></div>
+				<div class="row-full">
+					<div class="row">
+						<figure class="col-lg-2 col-md-2 col-sm-4 col-xs-4 product small">
+							<a href="#" class="box small"> <img src="img/demo/p2.png" /> </a>
+							<figcaption>
+								<a href="#" class="dark">Aardappelen,
+								<br>
+								pasta &amp; rijst</a>
+							</figcaption>
+						</figure>
+						<figure class="col-lg-2 col-md-2 col-sm-4 col-xs-4 product small">
+							<a href="#" class="box small"> <img src="img/demo/p5.png" /> </a>
+							<figcaption>
+								<a href="#" class="dark">Dranken</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="line-sep"></div>
+				<div class="row-full">
+					<div class="row">
+						<h3 class="normal-title col-lg-7 col-md-7 col-sm-7 col-xs-12"> 59 producten gevonden </h3>
+						<label class="lbl normal text-right col-lg-2 col-md-2 col-sm-2 col-xs-4"> Sorteer op: </label>
+						<div class="pull-right col-lg-3 col-md-3 col-sm-3 col-xs-8">
+							<div class="styled-select">
+								<select class="">
+									<option> </option>
+									<option>Relevantie</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="h-sep"></div>
+				<section class="products-overview-list search row-full" id="products-overview-list">
+					<figure class="product discount col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<div class="new-product">
+								<span>nieuw</span>
+							</div>
+							<img src="img/demo/po1.png" alt=" "/>
+							<a href="#" class="add"></a>
+							<figcaption>
+								<p>
+									Amstel bier blond 4.0
+									<br/>
+									<small>50 Centiliter</small>
+								</p>
+								<span class="price"> 0.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+					<figure class="product discount col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po2.png" />
+							<a href="#" class="add"></a>
+							<figcaption>
+								<p>
+									Brand Dubbelbock
+									<br/>
+									<small>6 Fles 0.3 Liter</small>
+								</p>
+								<span class="price"> 0.<sup>99</sup> 
+									<span class="old-price"><sup>1.99</sup></span>	
+								</span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper static">
+							<div class="product-details">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6">
+									<h3>Brand Dubbelbock</h3>
+									<h4>6 Flesjes 0.3 Liter</h4>
+								</div>
+						
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-pull-6 col-md-pull-6 col-sm-pull-6 img-wrapper text-center">
+									<img src="img/demo/po-b-1.png" alt=" "/>
+								</div>
+								<a href="#" class="btn light-green inner-add-left">Voeg toe aan
+									<br class="visible-xs"/>boodschappenlijstje</a>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6 box-list-pos tab-list" id="box-list-product">
+									<ul class="tab-buttons">
+										<li>
+											<a href="#tab-1">Ingrediënten</a>
+										</li>
+										<li>
+											<a href="#tab-2" class="active">voedingswaarden</a>
+										</li>
+										<li>
+											<a href="#tab-3">allergenen</a>
+										</li>
+									</ul>
+									
+									<div class="box-list tab" id="tab-1">1</div>
+									<div class="box-list tab" id="tab-2">
+										<ul>
+											<li>
+												<label class=""> <a href="#" class="selected">Voedingswaarden per 100 gram</a> </label>
+											</li>
+											<li>
+												<label class=""> <a href="#">Energie In Kj</a> </label>
+											</li>
+											<li>
+												<label class=""> <a href="#">Energie In Kcal</a> </label>
+											</li>
+											<li>
+												<label class=""> <a href="#">Koolhydraten</a> </label>
+											</li>
+											<li>
+												<label class=""> <a href="#">Voedingswaarden per 100 gram</a> </label>
+											</li>
+											<li>
+												<label class=""> <a href="#">Energie In Kcal</a> </label>
+											</li>
+											<li>
+												<label class=""> <a href="#">Koolhydraten</a> </label>
+											</li>
+										</ul>
+									</div>
+									<div class="box-list tab" id="tab-3">3</div>
+								</div>
+								
+							</div>
+						</div>
+					</figure>
+					<figure class="product col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po4.png" />
+							<a href="#" class="add"></a>
+							<figcaption>
+								<p>
+									De Goudsche Waegh Jong belegen Kaas
+									<br/>
+									<small>per 500 gram</small>
+								</p>
+								<span class="price"> 4.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+					<figure class="product col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po3.png" />
+							<a href="#" class="add"></a>
+							<figcaption>
+								<p>
+									Amstel bier radler
+									<br/>
+									<small>6 Stuks</small>
+								</p>
+								<span class="price"> 4.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+					<figure class="product col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po5.png" />
+							<figcaption>
+								<p>
+									Amstel bier blond 4.0
+									<br/>
+									<small>50 Centiliter</small>
+								</p>
+								<span class="price"> 4.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+					<figure class="product col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po6.png" />
+							<figcaption>
+								<p>
+									Aardappelen,
+									<br/>
+									pasta & rijst
+								</p>
+								<span class="price"> 4.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+					<figure class="product col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po7.png" />
+							<figcaption>
+								<p>
+									Brand Dubbelbock
+									<br/>
+									<small>6 Fles 0.3 Liter</small>
+								</p>
+								<span class="price"> 4.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+					<figure class="product col-lg-3 col-md-3 col-sm-4 col-xs-6">
+						<figure class="box small">
+							<img src="img/demo/po8.png" />
+							<figcaption>
+								<p>
+									Amster pilsner blik
+									<br/>
+									<small>50 Centiliter</small>
+								</p>
+								<span class="price"> 4.<sup>99</sup> </span>
+							</figcaption>
+						</figure>
+						<div class="product-details-wrapper">
+							<div class="product-details"></div>
+						</div>
+					</figure>
+				</section>
+
+				<div class="product-details-box">
+					
+				</div>
+			</div>
+		</section>
+		<!-- main content -->
+		<script src="js/product-overview.js"></script>
+		<footer>
+			<div class="page">
+
+			</div>
+		</footer>
+	</body>
+</html>

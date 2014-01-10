@@ -1,0 +1,91 @@
+.gourmet-items {
+	margin-bottom: 15px;
+}
+.gourmet-items > img {
+	width: 100%;
+	max-width: 100%;
+}
+.gourmet-items .numb-of-point {
+	margin-top: 25px;
+	font-size: 1.5vw;
+	font-size: 1.5em;
+	line-height: 140%;
+}
+.box.small img {
+	max-width:1000%;
+	width: auto;
+}
+.products-fix-width .product {
+	width: 160px;
+}
+.shop-steps {
+	width: 100%;
+	float: left;
+	margin: 15px 0;
+}
+.shop-steps ul {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.shop-steps li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 4%;
+}
+	.shop-steps li a.active {
+		color: #5f9f00;
+	}
+	.shop-steps li a.disabled {
+		color: #bbb;
+	}
+
+h5 a {
+	font-size: 1em;
+}
+.price-block {
+	height: 120px;
+	background: #efefe6;
+	position: relative;
+}
+.price-block div,
+.price-block-total div {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	text-align: right;
+}
+.price-block div > *,
+.price-block-total div > * {
+	display: inline-block;
+}
+.price-block-total {
+	height: 60px;
+	background: #efefe6;
+	position: relative;
+}
+div img {
+	width: auto;
+	max-width: 100%;
+}
+.gray-box {
+	background: #efefe6;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+h4 img {
+	margin-right: 10px;
+}
+.sub-title {
+	color: #666;
+}
+input[type=radio] + img {
+	margin-left: 8px;
+}
+@media screen and (max-width: 768px) {
+	.price-block {
+		height: 30px;
+	}
+}
