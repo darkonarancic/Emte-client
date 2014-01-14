@@ -132,6 +132,9 @@ $(function(){
 	if($('.box-list').size() > 0){
 		$('.box-list').perfectScrollbar();
 	}
+	if($('#tabs').size() > 0){
+		$('#tabs').tabs();
+	}
 });
 
 window.newItemInCart = function () {
