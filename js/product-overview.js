@@ -108,7 +108,7 @@ $(function(){
 		$('html, body').animate({scrollTop: $(el).offset().top}, 700);
 	};
 
-	$('#products-overview-list').delegate('.product','click', function(e){
+	$('#products-overview-list').delegate('.product, .product-big','click', function(e){
 		e.stopPropagation();
 		e.preventDefault();
 		if(!emteClientApp.openingInProgress){

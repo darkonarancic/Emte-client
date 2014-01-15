@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
 		<link rel="stylesheet" href="font/font.css"/>
+		<link rel="stylesheet" href="js/perfect-scrollbar/perfect-scrollbar.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/main-menu.css"/>
 
@@ -418,11 +419,11 @@
 
 				<div class="row-full">
 					<div class="row">
-						<div class="col-xs-12 big-products-list">
+						<div class="col-xs-12 big-products-list" id="products-overview-list">
 							<figure class="product-big discount col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<a href="#" class="btn-add"></a>
 								<div>
 									<span class="ten"></span>
-									<a href="#" class="btn-add"></a>
 									<div class="product-img">
 										<img src="img/demo/pb1.png" alt="" />
 									</div>
@@ -435,10 +436,66 @@
 									<span class="price-info">50% korting!</span>
 									<span class="price"> 0.<sup>99</sup> </span>
 								</figcaption>
+								<div class="product-details-wrapper static">
+									<div class="product-details">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6">
+											<h3>Brand Dubbelbock</h3>
+											<h4>6 Flesjes 0.3 Liter</h4>
+										</div>
+								
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-pull-6 col-md-pull-6 col-sm-pull-6 img-wrapper text-center">
+											<img src="img/demo/po-b-1.png" alt=" ">
+										</div>
+										<a href="#" class="btn light-green inner-add-left">Voeg toe aan
+											<br class="visible-xs">boodschappenlijstje</a>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6 box-list-pos tab-list ui-tabs ui-widget ui-widget-content ui-corner-all" id="box-list-product">
+											<ul class="tab-buttons ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+												<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab-1" aria-labelledby="ui-id-1" aria-selected="true">
+													<a href="#tab-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Ingrediënten</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-2" aria-labelledby="ui-id-2" aria-selected="false">
+													<a href="#tab-2" class="active ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">voedingswaarden</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-3" aria-labelledby="ui-id-3" aria-selected="false">
+													<a href="#tab-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">allergenen</a>
+												</li>
+											</ul>
+											
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-1" style="display: block;" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">1<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-2" style="display: none;" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true">
+												<ul>
+													<li>
+														<label class=""> <a href="#" class="selected">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kj</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+												</ul>
+											<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-3" style="display: none;" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="false" aria-hidden="true">3<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+										</div>
+										
+									</div>
+								</div>
 							</figure>
 							<figure class="product-big discount col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<a href="#" class="btn-add"></a>
 								<div>
-									<a href="#" class="btn-add"></a>
 									<div class="product-img">
 										<img src="img/demo/pb2.png" alt="" />
 									</div>
@@ -453,13 +510,69 @@
 									<span class="price-info">5 stuks</span>
 									<span class="price"> 9.<sup>99</sup> </span>
 								</figcaption>
+								<div class="product-details-wrapper static">
+									<div class="product-details">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6">
+											<h3>Brand Dubbelbock</h3>
+											<h4>6 Flesjes 0.3 Liter</h4>
+										</div>
+								
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-pull-6 col-md-pull-6 col-sm-pull-6 img-wrapper text-center">
+											<img src="img/demo/po-b-1.png" alt=" ">
+										</div>
+										<a href="#" class="btn light-green inner-add-left">Voeg toe aan
+											<br class="visible-xs">boodschappenlijstje</a>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6 box-list-pos tab-list ui-tabs ui-widget ui-widget-content ui-corner-all" id="box-list-product">
+											<ul class="tab-buttons ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+												<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab-1" aria-labelledby="ui-id-1" aria-selected="true">
+													<a href="#tab-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Ingrediënten</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-2" aria-labelledby="ui-id-2" aria-selected="false">
+													<a href="#tab-2" class="active ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">voedingswaarden</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-3" aria-labelledby="ui-id-3" aria-selected="false">
+													<a href="#tab-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">allergenen</a>
+												</li>
+											</ul>
+											
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-1" style="display: block;" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">1<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-2" style="display: none;" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true">
+												<ul>
+													<li>
+														<label class=""> <a href="#" class="selected">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kj</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+												</ul>
+											<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-3" style="display: none;" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="false" aria-hidden="true">3<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+										</div>
+										
+									</div>
+								</div>
 							</figure>
 							<figure class="product-big discount col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<a href="#" class="btn-add"></a>
 								<div>
 									<div class="new-product">
 										<span>nieuw</span>
 									</div>
-									<a href="#" class="btn-add"></a>
 									<div class="product-img">
 										<img src="img/demo/pb1.png" alt="" />
 									</div>
@@ -470,6 +583,62 @@
 									<span class="price-info">Nieuw in assortiment</span>
 									<span class="price"> 0.<sup>99</sup> </span>
 								</figcaption>
+								<div class="product-details-wrapper static">
+									<div class="product-details">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6">
+											<h3>Brand Dubbelbock</h3>
+											<h4>6 Flesjes 0.3 Liter</h4>
+										</div>
+								
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-pull-6 col-md-pull-6 col-sm-pull-6 img-wrapper text-center">
+											<img src="img/demo/po-b-1.png" alt=" ">
+										</div>
+										<a href="#" class="btn light-green inner-add-left">Voeg toe aan
+											<br class="visible-xs">boodschappenlijstje</a>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6 box-list-pos tab-list ui-tabs ui-widget ui-widget-content ui-corner-all" id="box-list-product">
+											<ul class="tab-buttons ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+												<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab-1" aria-labelledby="ui-id-1" aria-selected="true">
+													<a href="#tab-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Ingrediënten</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-2" aria-labelledby="ui-id-2" aria-selected="false">
+													<a href="#tab-2" class="active ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">voedingswaarden</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-3" aria-labelledby="ui-id-3" aria-selected="false">
+													<a href="#tab-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">allergenen</a>
+												</li>
+											</ul>
+											
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-1" style="display: block;" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">1<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-2" style="display: none;" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true">
+												<ul>
+													<li>
+														<label class=""> <a href="#" class="selected">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kj</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+												</ul>
+											<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-3" style="display: none;" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="false" aria-hidden="true">3<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+										</div>
+										
+									</div>
+								</div>
 							</figure>
 							
 							<figure class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
@@ -482,9 +651,9 @@
 							</figure>
 							
 							<figure class="product-big discount col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<a href="#" class="btn-add"></a>
 								<div>
 									<span class="ten"></span>
-									<a href="#" class="btn-add"></a>
 									<div class="product-img">
 										<img src="img/demo/pb1.png" alt="" />
 									</div>
@@ -497,6 +666,62 @@
 									<span class="price-info">50% korting!</span>
 									<span class="price"> 0.<sup>99</sup> </span>
 								</figcaption>
+								<div class="product-details-wrapper static">
+									<div class="product-details">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6">
+											<h3>Brand Dubbelbock</h3>
+											<h4>6 Flesjes 0.3 Liter</h4>
+										</div>
+								
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-pull-6 col-md-pull-6 col-sm-pull-6 img-wrapper text-center">
+											<img src="img/demo/po-b-1.png" alt=" ">
+										</div>
+										<a href="#" class="btn light-green inner-add-left">Voeg toe aan
+											<br class="visible-xs">boodschappenlijstje</a>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6 box-list-pos tab-list ui-tabs ui-widget ui-widget-content ui-corner-all" id="box-list-product">
+											<ul class="tab-buttons ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+												<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab-1" aria-labelledby="ui-id-1" aria-selected="true">
+													<a href="#tab-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Ingrediënten</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-2" aria-labelledby="ui-id-2" aria-selected="false">
+													<a href="#tab-2" class="active ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">voedingswaarden</a>
+												</li>
+												<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-3" aria-labelledby="ui-id-3" aria-selected="false">
+													<a href="#tab-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">allergenen</a>
+												</li>
+											</ul>
+											
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-1" style="display: block;" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">1<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-2" style="display: none;" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true">
+												<ul>
+													<li>
+														<label class=""> <a href="#" class="selected">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kj</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Voedingswaarden per 100 gram</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Energie In Kcal</a> </label>
+													</li>
+													<li>
+														<label class=""> <a href="#">Koolhydraten</a> </label>
+													</li>
+												</ul>
+											<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+											<div class=" tab ps-container ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-3" style="display: none;" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="false" aria-hidden="true">3<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: inherit;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 200px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+										</div>
+										
+									</div>
+								</div>
 							</figure>
 						</div>
 					</div>
