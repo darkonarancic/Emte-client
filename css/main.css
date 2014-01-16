@@ -54,7 +54,9 @@ h3 {
 	h3 strong {
     	font-family: 'VAGRoundedStdBold';
 	}
-	
+	h3.dark {
+            color: #0c663e;
+    }
 	h3.dark-gray {
 		margin-bottom: 0;
 	}
@@ -1080,7 +1082,7 @@ p.small {
     position: relative;
 }
 	.products-overview-list > div {
-		max-width: 924px;
+		max-width: 960px;
 		display: inline-block;
 		text-align: left;
 		position: relative;
@@ -2227,7 +2229,10 @@ h3.normal-title {
 .big-products-list .product-big{
 	margin-bottom: 20px;
 }
-.product-big > div {
+.product-big {
+	cursor: pointer;
+}
+.product-big > figure {
 	height: 300px;
 	-webkit-border-radius: 20px 0 20px 20px;
 	-moz-border-radius: 20px 0 20px 20px;
@@ -2257,6 +2262,21 @@ h3.normal-title {
 	}
 	.product-big > figcaption > * {
 		display: table-cell;
+	}
+	.product-big.active > figure::after {
+		top: auto;
+		bottom: -15px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-bottom-color: #fff;
+		border-width: 8px;
+		border-bottom-width: 11px;
+		left: 50%;
+		margin: 0px 0 -5px -10px;
 	}
 	.product-big .price {
 		width: auto;
