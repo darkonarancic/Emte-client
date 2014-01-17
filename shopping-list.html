@@ -17,8 +17,8 @@
 		<script type="text/javascript" src="js/jquery.validate.js"></script>
 		<script type="text/javascript" src="js/modernizr.custom.16305.js"></script>
 		<script type="text/javascript" src="js/global.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/main-menu.js"></script>
+		<script type="text/javascript" src="js/popover-shopping-list.js"></script>
 	</head>
 	<body>
 
@@ -87,88 +87,7 @@
 								</div>
 							</div>
 						</div>
-						<!--/* If user is NOT logged in */-->
-						<!-- <div>
-						<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
-						<h3>Word Fijnproever!</h3>
-						<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-						sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-						aliquam erat volutpat. Ut wisi enim ad minim veniam.
-						</p>
-						<div class="h-sep"></div>
-						<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right">
-						<a href="#" class="btn green-big">Registreren</a>
-						</div>
-						</div>
-						</div>
-						<br class="visible-xs" />
-						<br class="visible-xs" />
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1" id="login-form">
-						<h3>Word Fijnproever!</h3>
-						<form id="frmLogin" class="form-horizontal login-form" role="form" method="post">
-						<input type="hidden" name="successUrl" />
-						<div class="row">
-						<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"
-						for="j_username" > Loginnaam </span>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-						<input type="email" class="txt-medium" id="j_username"
-						name="j_username" placeholder="emailadres of kaartnummer" />
-						</div>
-						</div>
-						<div class="h-sep"></div>
-						<div class="row">
-						<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"
-						for="j_password"> Wachtwoord </span>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-						<input class="txt-medium" type="password" id="j_password"
-						name="j_password" placeholder="Wachtwoord" />
-						</div>
-						</div>
-						<div class="h-sep"></div>
-						<div class="error_summary">
-						<label> Bad credentials. </label>
-						</div>
-						<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-4 pull-left">
-						<input type="submit" class="btn green-big" value="Inloggen"
-						id="btnLogin" />
-						<div class="visible-xs h-sep"></div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
-						<a href="" class="f-pass forgot">Wachtwoord vergeten?</a>
-						</div>
-
-						</div>
-						<br />
-						</form>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1" id="forgot-password-form">
-						<h3>Nieuw wachtwoord</h3>
-						<form id="frmForgotPass" role="form">
-						<div class="row">
-						<span class="col-lg-4 col-md-4 col-sm-4 col-xs-12 lbl"> E-mailadres </span>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-						<input type="email" class="txt-medium" name="txt-forgot" id="txt-forgot" placeholder="Emailadres" title="Forgot password email not correct format." />
-						</div>
-						</div>
-						<div class="h-sep"></div>
-						<div class="error_summary">
-						<label> Bad credentials. </label>
-						</div>
-						<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-4 pull-left">
-						<input type="submit" id="btnSubmitForgotPassword" class="btn green-big" value="Versturen" />
-						</div>
-						<div class="visible-xs h-sep"></div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
-						<a href="" class="f-pass lbl login">Inloggen</a>
-						</div>
-						</div>
-						</form>
-						</div>
-						</div> -->
+					
 					</div>
 					<div class="shopping-list">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -374,9 +293,9 @@
 		<div class="overlay"></div>
 		<div class="clearfix"></div>
 		<!-- main content -->
-		<section id="main-content">
-			<div class="container">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shopping-list-wrapper">
+		<section id="main-contentpos-static">
+			<div class="container shopping-list-pos">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shopping-list-wrapper pos-static">
 
 					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-1">
 						<div class="row">
@@ -397,24 +316,75 @@
 								<h3>Uw boodschappenlijst <a href="#" class="btn btn-white-green pull-right">Snel vullen</a></h3>
 
 								<div class="h-sep"></div>
-								<div class="row">
+								<div class="row" id="shopping-box">
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 										<ul>
 											<li>
 												<span> <span class="minus"></span><a href="#"> Bananen </a><span class="plus"></span> </span>
-												<a href=""></a>
+												<a href="#" class="btn-replace"></a>
 											</li>
 											<li>
 												<span> <span class="minus" ></span><a href="#"> 2x Calvé Pindakaas </a><span class="plus"></span> </span>
-												<a href="" class="success"></a>
+												<a href="#" class="btn-replace success"></a>
 											</li>
 											<li>
 												<span> <span class="minus"></span><a href="#"> Verse kipfilet </a><span class="plus"></span> </span>
-												<a href="" class="warning"></a>
+												<a href="#" class="btn-replace warning"></a>
 											</li>
 											<li>
 												<span> <span class="minus"></span><a href="#"> Bavaria bier </a><span class="plus"></span> </span>
-												<a href=""></a>
+												<a href="#" class="btn-replace"></a>
+											</li>
+											<li class="popover-list in-list" >
+												<header>Bananen</header>
+												<figure>
+													<div class="col-xs-3">
+														<img src="" alt="" />
+													</div>
+													<div class="col-xs-8">
+														<h4>Chiquita bananen</h4>
+														<h5>1 kg</h5>
+													</div>
+													<div class="col-xs-1">
+														<a href="#" class="btn btn-next btn-next-red"> </a>
+													</div>
+												</figure>
+												<figure>
+													<div class="col-xs-3">
+														<img src="" alt="" />
+													</div>
+													<div class="col-xs-8">
+														<h4>Oké Bananen</h4>
+														<h5>5 stuks</h5>
+													</div>
+													<div class="col-xs-1">
+														<a href="#" class="btn btn-next btn-next-gray"> </a>
+													</div>
+												</figure>
+												<figure>
+													<div class="col-xs-3">
+														<img src="" alt="" />
+													</div>
+													<div class="col-xs-8">
+														<h4>Melkan halfvolle bananen kwark</h4>
+														<h5>500 gram</h5>
+													</div>
+													<div class="col-xs-1">
+														<a href="#" class="btn btn-next btn-next-gray"> </a>
+													</div>
+												</figure>
+												<figure>
+													<div class="col-xs-3">
+														<img src="" alt="" />
+													</div>
+													<div class="col-xs-8">
+														<h4>Melkan halfvolle bananen kwark</h4>
+														<h5>500 gram</h5>
+													</div>
+													<div class="col-xs-1">
+														<a href="#" class="btn btn-next btn-next-gray"> </a>
+													</div>
+												</figure>
 											</li>
 											<li>
 												<span> <span class="minus"></span><a href="#" class="success"> Uien </a><span class="plus"></span> </span>
@@ -422,23 +392,23 @@
 											</li>
 										</ul>
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pos-static">
 										<ul>
 											<li>
 												<span> <span class="minus"></span><a href="#">Bananen</a><span class="plus"></span> </span>
-												<a href=""></a>
+												<a href="#" class="btn-replace"></a>
 											</li>
 											<li>
 												<span> <span class="minus"></span><a href="#">Calvé Pindakaas</a><span class="plus"></span> </span>
-												<a href="" class="success"></a>
+												<a href="#" class="btn-replace success"></a>
 											</li>
 											<li>
 												<span> <span class="minus"></span><a href="#">Verse kipfilet</a><span class="plus"></span> </span>
-												<a href="" class="warning"></a>
+												<a href="#" class="btn-replace warning"></a>
 											</li>
 											<li>
 												<span> <span class="minus"></span><a href="#">Bavaria bier</a><span class="plus"></span> </span>
-												<a href=""></a>
+												<a href="#" class="btn-replace"></a>
 											</li>
 											<li class="text-muted">
 												<a href="#">Regel toevoegen...</a>
@@ -462,13 +432,77 @@
 					</div>
 				</div>
 			</div>
+			
 		</section>
+		
+		<div class="popover-list box">
+			<header>Bananen</header>
+			<figure>
+				<div class="col-xs-3">
+					<img src="" alt="" />
+				</div>
+				<div class="col-xs-8">
+					<h4>Chiquita bananen</h4>
+					<h5>1 kg</h5>
+				</div>
+				<div class="col-xs-1">
+					<a href="#" class="btn btn-next btn-next-red"> </a>
+				</div>
+			</figure>
+			<figure>
+				<div class="col-xs-3">
+					<img src="" alt="" />
+				</div>
+				<div class="col-xs-8">
+					<h4>Oké Bananen</h4>
+					<h5>5 stuks</h5>
+				</div>
+				<div class="col-xs-1">
+					<a href="#" class="btn btn-next btn-next-gray"> </a>
+				</div>
+			</figure>
+			<figure>
+				<div class="col-xs-3">
+					<img src="" alt="" />
+				</div>
+				<div class="col-xs-8">
+					<h4>Melkan halfvolle bananen kwark</h4>
+					<h5>500 gram</h5>
+				</div>
+				<div class="col-xs-1">
+					<a href="#" class="btn btn-next btn-next-gray"> </a>
+				</div>
+			</figure>
+			<figure>
+				<div class="col-xs-3">
+					<img src="" alt="" />
+				</div>
+				<div class="col-xs-8">
+					<h4>Melkan halfvolle bananen kwark</h4>
+					<h5>500 gram</h5>
+				</div>
+				<div class="col-xs-1">
+					<a href="#" class="btn btn-next btn-next-gray"> </a>
+				</div>
+			</figure>
+		</div>
+		<div class="header-overflow"></div>
+		
 		<!-- main content -->
-
 		<footer>
 			<div class="page">
 
 			</div>
 		</footer>
+		
+		<!-- scripts -->
+		<script>
+			$(document).ready(function(){
+				$('#shopping-box').popover({
+					eventEl: ".btn-replace",
+					delegateEl: "#shopping-box"
+				});
+			});
+		</script>
 	</body>
 </html>

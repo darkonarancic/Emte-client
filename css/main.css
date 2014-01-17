@@ -1421,6 +1421,12 @@ p.small {
 	margin: 0 0 20px 0;
 	padding: 0;
 	border-top: 1px dotted #dfdfcf;
+	position: static;
+	z-index: 1;
+}
+.shopping-list-pos * {
+	-webkit-transform: none;
+	position: static;
 }
 .shopping-list-wrapper ul li {
 	min-height: 40px;
@@ -1430,6 +1436,7 @@ p.small {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
+	z-index: 2;
 }
 	
 	.shopping-list-wrapper ul li > span {
@@ -2360,6 +2367,85 @@ h3.normal-title {
 		display: inline-block;
 		margin-right: 45px;
 	}
+	.banner-slider ul {
+		height: 300px;
+	}
+	
+/* popover */
+.shopping-list-pos {
+	position: relative;
+	z-index: 101;
+}
+.shopping-list-pos ul li.popover-list {
+	display: none;
+}
+.popover-list {
+	width: 360px;
+	max-width: 100%;
+	height: 360px;
+	min-height: 0;
+	float: left;
+	position: absolute;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #fff;
+	top: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 105;
+	display: none;
+}
+.popover-list.box {
+	visibility: visible;
+}
+.popover-list.in-list {
+	visibility: hidden;
+}
+.popover-list:before {
+	content: "";
+	width: 12px;
+	height: 30px;
+	position: absolute;
+	border-right: 12px solid #fff;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	left: -12px;
+	top: 40%;
+}
+.popover-list.top:before {
+	height: 12px;
+	width: 30px;
+	right: 24px;
+	left: auto;
+	top: -12px;
+	position: absolute;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 12px solid #fff;
+	border-top: 0px solid transparent;
+}
+.header-overflow {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.3;
+	z-index: 101;
+	display: none;
+}
+.header-overflow.active {
+	display: block;
+}
+.popover-list.active {
+	display: block;
+}
+/* eof popover */	
+	
 @media screen and (max-width: 992px) {
 	.msg + label.error {
 		top: 53px;
