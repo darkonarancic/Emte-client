@@ -54,42 +54,45 @@ $(function(){
 
     // ~ handle password forgot form
     function bindCartButtons() {
-        $('.minus').on('click', function (e) {
-            e.preventDefault();
-            var id = $(this).attr('id');
-            id = id.replace("remove", "");
-            var args = id.split("*");
-            $.ajax({
-                type: "GET",
-                url: "/site/cart/updateQuantity",
-                data: {productId: args[1], orderItemId: args[0], quantity: (args[2] - 1)},
-                success: function (data) {
-                    //alert(data);
-                    $("#cartItems").html(data);
-                    bindCartButtons();
-                }
-            });
-        });
-
-
-        $('.plus').on('click', function (e) {
-            e.preventDefault();
-            var id = $(this).attr('id');
-            id = id.replace("add", "");
-            var args = id.split("*");
-            var q = parseInt(args[2]) + 1;
-
-            $.ajax({
-                type: "GET",
-                url: "/site/cart/updateQuantity",
-                data: {productId: args[1], orderItemId: args[0], quantity: q},
-                success: function (data) {
-                    //alert(data);
-                    $("#cartItems").html(data);
-                    bindCartButtons();
-                }
-            });
-        });
+    	if($('.minus').size() > 0){
+	        $('.minus').on('click', function (e) {
+	            e.preventDefault();
+	            var id = $(this).attr('id');
+	            id = id.replace("remove", "");
+	            var args = id.split("*");
+	            $.ajax({
+	                type: "GET",
+	                url: "/site/cart/updateQuantity",
+	                data: {productId: args[1], orderItemId: args[0], quantity: (args[2] - 1)},
+	                success: function (data) {
+	                    //alert(data);
+	                    $("#cartItems").html(data);
+	                    bindCartButtons();
+	                }
+	            });
+	        });
+		}
+		
+		if($('.plus').size() > 0){
+	        $('.plus').on('click', function (e) {
+	            e.preventDefault();
+	            var id = $(this).attr('id');
+	            id = id.replace("add", "");
+	            var args = id.split("*");
+	            var q = parseInt(args[2]) + 1;
+	
+	            $.ajax({
+	                type: "GET",
+	                url: "/site/cart/updateQuantity",
+	                data: {productId: args[1], orderItemId: args[0], quantity: q},
+	                success: function (data) {
+	                    //alert(data);
+	                    $("#cartItems").html(data);
+	                    bindCartButtons();
+	                }
+	            });
+	        });
+       	}
     }
 
     bindCartButtons();

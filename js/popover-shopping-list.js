@@ -10,6 +10,7 @@
 			
 			var that = this;
 			var el = null;
+			var mobileRes = 768;
 			
 			this.config = $.extend({}, defaults, options);
 				
@@ -77,24 +78,27 @@
 				
 				var onRightSpace = wWidth - elFullLeftPos;
 				
-				var afterTopPos = ($(obj).offset().top + $(obj).height) - that.topPosOfTheEl + 14;
+				var afterTopPos = that.topPosOfTheEl - parseInt($(obj).css('top'));
 				
-				//check the slice cutted
+				//check the slice
 				if(onRightSpace >= this.elWidth){
-					$(obj).css({ left: elFullLeftPos + "px", top: "90px", right: "auto"}).removeClass('top');
-					$("::before", obj).css({ top: afterTopPos + "px" });
+					$(obj).css({ left: (elFullLeftPos + 10) + "px", top: "90px", right: "auto"}).removeClass('top').addClass('arrow-left');
+					$(".popover-arrow").css({ top: afterTopPos + "px" });
 				}
 				else {
-					$(obj).css({ right: (onRightSpace - 20) + "px", top: (that.topPosOfTheEl + that.elHeight) + "px", left: "auto"}).addClass('top');
+					$(".popover-arrow").css({ top: "-12px" });
+					$(obj).css({ right: (onRightSpace - 20) + "px", top: (that.topPosOfTheEl + that.elHeight + 10) + "px", left: "auto"}).addClass('top');
 				}
 			};
 			
 			this.calculateListPos = function(obj, el){
-				
+				$(obj).insertAfter($(el).parent('li')).addClass('active');
+				$(obj).show();
 			};
 			
+			//replace main popover content
 			this.repaceTheContent = function(obj){
-				
+				//ajax callback
 			};
 			
 			this.displayPopover = function(obj){
@@ -105,14 +109,20 @@
 				$(obj).removeClass('active');
 			};
 			
-			this.initScript = function(){
+			this.initScript = function(callback){
 				that.popoverClass = null;
 				
-				$.each($('.popover-list'), function(){
-					if($(this).css('visibility') === 'visible'){
-						that.popoverClass = $(this);
-					}
-				});
+				if(mobileRes < $(window).width()){
+					that.popoverClass = $('.popover-list.box');
+					$('.popover-list.in-list').hide();
+				}
+				else {
+					that.popoverClass = $('.popover-list.in-list');
+				}
+				
+				if(typeof callback === 'function'){
+					callback.call();
+				}
 			};			
 			
 			$(this.config.delegateEl).delegate(this.config.eventEl, 'click', function(e){
@@ -124,7 +134,9 @@
 			this.initScript();
 			
 			$(window).resize(function(){
-				that.init(el);
+				that.initScript(function(){
+					that.init(el);
+				});
 			});
 			
 			return this;

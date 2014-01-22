@@ -423,9 +423,9 @@ textarea:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
         white-space: pre-line;
     }
 	.btn.light-green {
+		width: 100%;
 		display: inline-block;
         float: none;
-        min-width: 150px;
         min-height: 40px;
         background: url(../img/btn-arrow-right.png) no-repeat 10px 50% #77b700;
         color: #fff;
@@ -1418,6 +1418,8 @@ p.small {
 
 /* shopping list */
 .shopping-list-wrapper ul {
+	width: 100%;
+	float: left;
 	margin: 0 0 20px 0;
 	padding: 0;
 	border-top: 1px dotted #dfdfcf;
@@ -1429,7 +1431,9 @@ p.small {
 	position: static;
 }
 .shopping-list-wrapper ul li {
+	width: 100%;
 	min-height: 40px;
+	float: left;
 	list-style: none;
 	border-bottom: 1px dotted #dfdfcf;
 	-webkit-box-sizing: border-box;
@@ -2390,41 +2394,77 @@ h3.normal-title {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	background: #fff;
-	top: 0;
+	top: 90px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 105;
 	display: none;
+	padding: 0;
+}
+.popover-list > * {
+	width: 100%;
+	float: left;
+}
+.popover-list header {
+	width: 100%;
+	height: 40px;
+	float: left;
+	background: #dfdfd0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	color: #006c3c;
+	padding: 0 10px;
+	line-height: 40px;
 }
 .popover-list.box {
 	visibility: visible;
 }
 .popover-list.in-list {
 	visibility: hidden;
+	position: relative;
+	-webkit-transition: height 0.3s ease;
+	-moz-transition: height 0.3s ease;
+	transition: height 0.3s ease;
+	top: 0;
 }
-.popover-list:before {
-	content: "";
-	width: 12px;
-	height: 30px;
+.popover-list .popover-arrow {
+	width: 20px;
+	height: 1px;
+	float: left;
+	border: 0px;
 	position: absolute;
-	border-right: 12px solid #fff;
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-	left: -12px;
-	top: 40%;
+	left: -11px;
+	top: 90%;
 }
-.popover-list.top:before {
+.popover-arrow .pos-rel:before {
+	content: "";
+	border-right: 12px solid #fff;
+	border-top: 18px solid transparent;
+	border-bottom: 20px solid transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+	position: absolute;
+	top: inherit;
+}
+.popover-list.top .popover-arrow {
 	height: 12px;
 	width: 30px;
 	right: 24px;
 	left: auto;
 	top: -12px;
-	position: absolute;
+}
+.popover-list.top .popover-arrow .pos-rel:before {
+	content: "";
 	border-right: 15px solid transparent;
 	border-left: 15px solid transparent;
-	border-bottom: 12px solid #fff;
+	border-bottom: 12px solid #dfdfd0;
 	border-top: 0px solid transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
 }
 .header-overflow {
 	width: 100%;
@@ -2438,6 +2478,50 @@ h3.normal-title {
 	z-index: 101;
 	display: none;
 }
+	.popover-list figure { 
+		width: 100%;
+		height: 79px;
+		float: left;
+		padding: 0 0 0 0; 
+	}
+		.popover-list figure > a {
+			width: 100%;
+			float: left;
+			padding: 14px 10px 10px 10px;
+			border-bottom: 1px dashed #8ab39c;
+		}
+	.popover-list figure h4, .popover-list figure h5 {
+		color: #000;
+		line-height: 1.1em;
+	}
+		.popover-list figure h5 {
+			margin-top: 5px;
+		}
+		.popover-list figure:last-child a {
+			border: 0;
+		}
+		.btn-next-red {
+			width: 21px;
+			height: 21px;
+			float: right;
+			background: url(../img/list-arrows.png) no-repeat 99% 100%;
+		}
+		.btn-next-gray {
+			width: 21px;
+			height: 21px;
+			float: right;
+			background: url(../img/list-arrows.png) no-repeat 99% 0%;
+		}
+		.btn-next-green {
+			width: 21px;
+			height: 21px;
+			float: right;
+			background: url(../img/list-arrows.png) no-repeat 99% 51%;
+		}
+		
+		.popover-list figure > a span {
+			margin-top: 20px;
+		}
 .header-overflow.active {
 	display: block;
 }
@@ -2483,6 +2567,15 @@ h3.normal-title {
 	.row-buttons button.btn.btn-white-green {
 		padding-left: 20px; 
 		background-position: 5% 50%;
+	}
+	.popover-list.box {
+		visibility: hidden;
+	}
+	.popover-list.in-list {
+		visibility: visible;
+	}
+	.header-overflow.active {
+		display: none;
 	}
 }
 @media screen and (max-width: 768px){
