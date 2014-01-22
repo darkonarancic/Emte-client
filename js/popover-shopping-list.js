@@ -139,6 +139,11 @@
 				});
 			});
 			
+			$('btn-show-details').live('click', function(e){
+				e.preventDefault();
+				
+			});
+			
 			return this;
 		};
 	}
