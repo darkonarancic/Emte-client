@@ -93,7 +93,6 @@
 			
 			this.calculateListPos = function(obj, el){
 				$(obj).insertAfter($(el).parent('li')).addClass('active');
-				$(obj).show();
 			};
 			
 			//replace main popover content
@@ -109,15 +108,35 @@
 				$(obj).removeClass('active');
 			};
 			
+			//replace the content of the popover with product details content
+			this.showProductDetailsReplace = function(btnObj){
+				var newHTML = null;
+				//ajax call goes here
+				$('.popover-list').html(newHTML);
+			};
+			
+			this.showProductDetailsBackToList = function(btnObj){
+				//this.showProductDetailsReplace(btnObj);
+				$('.popover-list .product-details').hide();
+				$('.popover-list .products-list').show();
+			};
+			
+			this.showProductDetails = function(btnObj){
+				//this.showProductDetailsReplace(btnObj);
+				$('.popover-list .products-list').hide();
+				$('.popover-list .product-details').show();
+			};
+			
 			this.initScript = function(callback){
 				that.popoverClass = null;
 				
 				if(mobileRes < $(window).width()){
 					that.popoverClass = $('.popover-list.box');
-					$('.popover-list.in-list').hide();
+					$('.popover-list.in-list').removeClass('active');
 				}
 				else {
 					that.popoverClass = $('.popover-list.in-list');
+					$('.popover-list.in-list').removeClass('active');
 				}
 				
 				if(typeof callback === 'function'){
@@ -139,9 +158,14 @@
 				});
 			});
 			
-			$('btn-show-details').live('click', function(e){
+			$('.btn-show-details').live('click', function(e){
 				e.preventDefault();
-				
+				that.showProductDetails(this);
+			});
+			
+			$('.btn-details-back').live('click', function(e){
+				e.preventDefault();
+				that.showProductDetailsBackToList(this);
 			});
 			
 			return this;
