@@ -2446,6 +2446,24 @@ h3.normal-title {
 		padding-left: 15px;
 		background: url(../img/arrow-bold-right.png) no-repeat 0 50%;
 	}
+	.popover-list header .btn-close {
+		width: 20px;
+		height: 40px;
+		float: right;
+		padding: 0;
+		background: none;
+		position: relative;
+	}
+		.popover-list header .btn-close:before {
+			width: 20px;
+			height: 40px;
+			content: "x";
+			font-family: 'VAGRoundedStdregular';
+			line-height: 40px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
 .popover-list.box {
 	visibility: visible;
 }
@@ -2546,7 +2564,7 @@ h3.normal-title {
 		top: -0.8em;
 	}
 	.popover-list.in-list .product-details .price .old-price {
-		top: -1.0em;
+		top: -1.1em;
 	}
 		.product-details .price .old-price sup {
 			color: #005232;
@@ -2615,6 +2633,27 @@ h3.normal-title {
 	display: block;
 }
 /* eof popover */	
+
+/* small progress bar */
+.progress-bar-small {
+	width: 100%;
+	height: 6px;
+	float: left;
+	background: #dfdfd0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+	.progress-bar-small span {
+		width: auto;
+		height: 6px;
+		float: left;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		background: #5da400;
+	}
+/* eof small progress bar */
 	
 @media screen and (max-width: 992px) {
 	.msg + label.error {
@@ -2659,6 +2698,9 @@ h3.normal-title {
 	}
 	.popover-list.in-list {
 		visibility: visible;
+		height: auto;
+		min-height: 360px;
+		padding-bottom: 10px;
 	}
 	.header-overflow.active {
 		display: none;

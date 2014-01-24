@@ -45,7 +45,7 @@
 			
 			//initialize popover box
 			this.initBox = function(obj, el){
-				this.openOverflow();
+				this.triggerOverflow();
 				
 				this.calculateBoxPos(obj, el);
 				this.repaceTheContent(obj);
@@ -54,7 +54,7 @@
 			
 			//initialize popover in-list
 			this.initList = function(obj, el){
-				this.openOverflow();
+				this.triggerOverflow();
 				
 				this.calculateListPos(obj, el);
 				this.repaceTheContent(obj);
@@ -62,7 +62,7 @@
 			};
 			
 			//open overflow el, passing "true" will close it
-			this.openOverflow = function(close){
+			this.triggerOverflow = function(close){
 				close = close === true ? true : false;
 				if(close){
 					$('.header-overflow').removeClass('active');
@@ -105,7 +105,10 @@
 			};
 			
 			this.closePopover = function(obj){
-				$(obj).removeClass('active');
+				$('.popover-list .product-details').hide();
+				$('.popover-list .products-list').show();
+				$(that.popoverClass).removeClass('active');
+				this.triggerOverflow(true);
 			};
 			
 			//replace the content of the popover with product details content
@@ -166,6 +169,10 @@
 			$('.btn-details-back').live('click', function(e){
 				e.preventDefault();
 				that.showProductDetailsBackToList(this);
+			});
+			$('.btn-close').live('click', function(e){
+				e.preventDefault();
+				that.closePopover(this);
 			});
 			
 			return this;

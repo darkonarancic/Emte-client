@@ -84,6 +84,14 @@ h4 img {
 input[type=radio] + img {
 	margin-left: 8px;
 }
+.gourmet-items p.dark-gray {
+	width: 100%;
+	float: left;
+	height: 50px;
+	overflow: hidden;
+	clear: both;
+}
+
 @media screen and (max-width: 768px) {
 	.price-block {
 		height: 30px;
