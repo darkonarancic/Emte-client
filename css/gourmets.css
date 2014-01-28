@@ -1,9 +1,13 @@
 .gourmet-items {
+	max-height: 337px;
+	min-height: 337px;
 	margin-bottom: 15px;
+	display: inline-block;
 }
 .gourmet-items > img {
 	width: 100%;
 	max-width: 100%;
+	height: 153px;
 }
 .gourmet-items .numb-of-point {
 	margin-top: 25px;
@@ -91,9 +95,14 @@ input[type=radio] + img {
 	overflow: hidden;
 	clear: both;
 }
-
+@media screen and (min-width: 769px) {
+	
+}
 @media screen and (max-width: 768px) {
 	.price-block {
 		height: 30px;
+	}
+	.box > img.product-img {
+		height: auto;
 	}
 }
