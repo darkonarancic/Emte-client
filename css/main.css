@@ -2739,11 +2739,13 @@ h3.normal-title {
 .progress-bar-small {
 	width: 100%;
 	height: 6px;
-	float: left;
+	display: inline-block;
+	float: none;
 	background: #dfdfd0;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	max-width: 69px;
 }
 	.progress-bar-small span {
 		width: auto;
@@ -2924,6 +2926,99 @@ figcaption .price-old {
 	}
 /* eof all offers */
 
+/* reedem shop elements */
+.box-medium {
+	
+}
+	.box-medium .img-wrapper {
+		width: 100%;
+		height: 150px;
+		float: left;
+		margin: 0 0 3px 0;
+		-webkit-border-radius: 20px 0 0 0;
+		-moz-border-radius: 20px 0 0 0;
+		border-radius: 20px 0 0 0;
+		text-align: center;
+		line-height: 150px;
+		
+	}
+	.box-medium img {
+		width: auto;
+		max-width: 100%;
+		max-height: 150px;
+	}
+	.box-medium .numb-point {
+		width: 90px;
+		height: 92px;
+		max-width: 1000%;
+		background: url(../img/numb-of-point-elipse.png) no-repeat 0 0;
+		margin: 0 ;
+		display: inline-block;
+	}
+.box-medium p, .box-small p {
+	font-size: 1em;
+}
+.box-small {
+	overflow: hidden;
+}
+	.box-small img {
+		float: left;
+	}
+	
+	.box-small .numb-point {
+		width: 72px;
+		height: 56px;
+		max-width: 1000%;
+		background: url(../img/numb-of-point-elipse.png) no-repeat 0 0;
+		margin: 0 ;
+		background-size: 100%; 
+		margin: 5px 0 5px 0;
+		color: #0a512d;
+	}
+		.box-small .box-point-krijt {
+			margin: 6px 0 0 0;
+			font-size: 1.45em;
+		}
+		.box-small .box-point-krijt sub {
+			top: 8px;
+		}
+		.box-small .box-point-extra {
+			top: -14px;
+			left: 82px;
+		}
+	.box-point-krijt {
+		width: 100%;
+		float: left;
+		margin: 8px 0 0 0;
+		font-family: 'krijt_regular';
+		font-size: 1.7em;
+		text-align: center;
+		color: #0a512d;
+	}
+		.box-point-krijt sub {
+    		width: 100%;
+    		float: left;
+    		font-family: 'VAGRoundedStdregular';
+   		 	font-size: 0.4em;
+   		 	position: relative;
+    		top: 10px;
+		}
+		.box-point-extra {
+    		font-family: 'VAGRoundedStdregular';			
+    		top: 30px;
+    		font-size: 1em;
+			color: #000;
+			position: relative;
+		}
+		.box-medium .line-sep {
+			margin: 2px 0 !important;
+		}
+			.box-medium .btn.green-arrow {
+				background: none;
+				padding: 3px 0;
+			}
+/* eof reedem shop elements */
+
 @media screen and (max-width: 992px) {
 	.msg + label.error {
 		top: 53px;
@@ -3013,6 +3108,9 @@ figcaption .price-old {
 	/* eof bootstrap improvement */
 	
 	.box-item-img > img {
+		height: auto;
+	}
+	.box-small {
 		height: auto;
 	}
 }

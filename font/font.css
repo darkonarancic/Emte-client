@@ -51,5 +51,15 @@
          url('VAGRoundedStd-Bold/vagroundedstd-bold.ttf') format('truetype'),
          url('VAGRoundedStd-Bold/vagroundedstd-bold.svg#VAGRoundedStdBold') format('svg');
 }
+@font-face {
+    font-family: 'krijt_regular';
+    src: url('Krijt/emte_krijt-webfont.eot');
+    src: url('Krijt/emte_krijt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Krijt/emte_krijt-webfont.woff') format('woff'),
+         url('Krijt/emte_krijt-webfont.ttf') format('truetype'),
+         url('Krijt/emte_krijt-webfont.svg#emte_krijtregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
